@@ -1,4 +1,4 @@
-# Minecraft-Toos  
+# Minecraft-Toos自述文件  
 ## Minecraft Toos简要  
 这是我2024年7月开发的一个项目，从1.0版本一直到6.1版本，作者开发用了非常多的时间  
 本人最初用的是VS(Microsoft Visual Studio)开发，但是因为电脑出现了某些问题导致VS无法进行更新、安装操作。后来用了破解工具破解了Clion，以后就用了Clion。  
