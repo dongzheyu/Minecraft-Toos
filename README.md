@@ -9,10 +9,12 @@
 2.小白无脑式安装，安装包纯中文无英文  
 3.点击快捷方式即可打开，无需多余步骤！  
 4.选择功能大全，开始使用吧~  
-## 下个版本更新透露
-1.添加检查更新模块，并且在启动软件时自动检查  
-2.添加检查网络模块，并且在启动软件时自动检查  
+## 下载链接
+6.4.0 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.4.0/Minecraft-Toos.Setup.exe)
+6.3.3 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.3.3/Minecraft-Toos.Setup.exe)
+6.1   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.1/Minecraft-Toos.setup.exe)
+6.0   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.0/Setup.exe)
   
   
-##### 自述文件更新日期：2025年4月6日21:40:00
+##### 自述文件更新日期：2025年4月26日19:57:13
 ###### bilibili 我是dongle(C)保留所有权利  
