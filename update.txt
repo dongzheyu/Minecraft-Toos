@@ -1,0 +1,8 @@
+[Update1]
+Name=Minecraft-Toos
+Version=6.4.0
+URL=https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.4.0/Minecraft-Toos.Setup.exe
+Size=1483484275 
+MD5=e3da13a3d0ff0ce8c73f0a704eb98a8a
+Description=修复在某些情况下打不开的问题和添加了登录功能，（默认用户名：User 默认密码：12345678）
+Mandatory=1
