@@ -14,6 +14,7 @@
 6.3.3 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.3.3/Minecraft-Toos.Setup.exe)  
 6.1   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.1/Minecraft-Toos.setup.exe)  
 6.0   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.0/Setup.exe)  
+其他早期版本请在[发布页](https://github.com/dongzheyu/Minecraft-Toos/releases)下载  
   
   
 ##### 自述文件更新日期：2025年4月26日19:57:13
