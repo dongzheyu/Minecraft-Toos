@@ -10,10 +10,10 @@
 3.点击快捷方式即可打开，无需多余步骤！  
 4.选择功能大全，开始使用吧~  
 ## 下载链接
-6.4.0 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.4.0/Minecraft-Toos.Setup.exe)
-6.3.3 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.3.3/Minecraft-Toos.Setup.exe)
-6.1   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.1/Minecraft-Toos.setup.exe)
-6.0   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.0/Setup.exe)
+6.4.0 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.4.0/Minecraft-Toos.Setup.exe)  
+6.3.3 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.3.3/Minecraft-Toos.Setup.exe)  
+6.1   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.1/Minecraft-Toos.setup.exe)  
+6.0   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.0/Setup.exe)  
   
   
 ##### 自述文件更新日期：2025年4月26日19:57:13
