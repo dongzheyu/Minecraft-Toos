@@ -1,24 +1,88 @@
-# Minecraft-Toos自述文件  
-## Minecraft Toos简要  
-这是我2024年7月开发的一个项目，从1.0版本一直到6.1版本，作者开发用了非常多的时间  
-本人最初用的是VS(Microsoft Visual Studio)开发，但是因为电脑出现了某些问题导致VS无法进行更新、安装操作。后来用了破解工具破解了Clion，以后就用了Clion。  
-本项目原名为我的世界双版本启动器，后改名为Minecraft Toos  
-记得去我的B站主页:https://space.bilibili.com/3546730880567808   点个赞哦~~~  
-## 网站
-经过JetCPP开发团队的不懈努力，终于也是开发出了Minecraft-Toos的官方网站。  
-点击[此处](https://dongzheyu.github.io/)即可跳转  
-## 使用方法  
-1.（小白都会的方法）从发布页下载安装包和.NET运行库  
-2.小白无脑式安装，安装包纯中文无英文  
-3.点击快捷方式即可打开，无需多余步骤！  
-4.选择功能大全，开始使用吧~  
-## 下载链接
-6.4.0 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.4.0/Minecraft-Toos.Setup.exe)  
-6.3.3 [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.3.3/Minecraft-Toos.Setup.exe)  
-6.1   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.1/Minecraft-Toos.setup.exe)  
-6.0   [点击下载](https://github.com/dongzheyu/Minecraft-Toos/releases/download/6.0/Setup.exe)  
-#### 其他早期版本请在[发布页](https://github.com/dongzheyu/Minecraft-Toos/releases)下载  
-  
-  
-##### 自述文件更新日期：2025年4月29日20:17:47
-###### JetCPP开发团队©保留所有权利  
+# 🎮 Minecraft-Toos  
+**C++ 编写的 Minecraft 多功能工具包**
+
+> 一键管理 Java 版与基岩版，支持启动器、环境配置、下载破解等实用功能。
+
+---
+
+## 🛠️ 核心功能  
+
+### 🔧 核心工具
+1. **启动 PCL2CE**  
+   快速启动 [PCL2CE](https://github.com/PCL-Community/PCL2-CE)（PrismLauncher 社区版增强）。
+2. **启动 Hello Minecraft! Launcher**  
+   启动经典国产 Minecraft 启动器（需提前安装 Java 环境）。
+3. **配置 Java 环境**  
+   自动检测并配置 Java 路径，支持 JDK/JRE 安装引导。
+
+---
+
+### 🧱 基岩版支持
+4. **下载基岩版**  
+   提供 Minecraft: Bedrock Edition 官方版本下载（需联网）。
+5. **破解基岩版** *(请遵守当地法律法规)*  
+   通过非官方渠道获取未加密版本（仅限学习用途，禁止商业分发）。
+
+---
+
+### 🌐 实用链接与账户
+6. **查看教程/问题解答**  
+   内置帮助文档已迁移至 Bilibili 教程专区：[点击查看教程](https://space.bilibili.com/3546730880567808?spm_id_from=333.1007.0.0)
+7. **退出程序**  
+   安全关闭工具包并保存当前配置。
+9. **返回主菜单**  
+   从子功能界面返回主操作界面。
+10. **有用网站导航**  
+    提供模组资源站、教程论坛、正版购买页面等快捷入口。
+11. **注册微软账户**  
+    指导创建 Microsoft 账户（用于购买正版游戏及服务）。
+
+---
+
+## 📦 安装与使用  
+
+### ✅ 安装方式
+- **Windows 用户**：  
+  下载并运行 `Minecraft-Toos.Set-up.exe`（含 VC++ 运行库自动安装）。
+
+---
+
+## ⚠️ 注意事项
+- **基岩版破解功能** 仅供学习研究，禁止用于商业或侵权行为。  
+- 所有下载资源均来自官方或开源社区，本工具不承担版权纠纷责任。  
+- 配置 Java 环境时请确保系统已安装 [JDK 17+](https://adoptium.net/)。
+
+---
+
+## 🤝 贡献与反馈  
+- **提交 Bug 或建议**：[GitHub Issues](https://github.com/dongzheyu/Minecraft-Toos/issues/2)
+
+---
+
+## 📜 许可证  
+本项目采用 [MIT License](LICENSE) 开源，欢迎使用、修改和分发。
+
+---
+
+## 📞 联系方式  
+- GitHub 主页：[https://github.com/dongzheyu/Minecraft-Toos](https://github.com/dongzheyu/Minecraft-Toos)
+
+---
+
+### 📌 功能索引映射表  
+| 编号 | 功能描述                | 所属模块         |
+|------|-------------------------|------------------|
+| 1    | 启动 PCL2CE             | 启动器管理       |
+| 2    | 启动 Hello Minecraft!   | 启动器管理       |
+| 3    | 下载基岩版              | 版本管理         |
+| 4    | 破解基岩版              | 版本管理         |
+| 5    | 配置 Java 环境          | 环境配置         |
+| 6    | 查看教程/问题解答       | 帮助系统         |
+| 7    | 退出                    | 系统控制         |
+| 9    | 返回                    | 系统控制         |
+| 10   | 有用网站                | 社区资源         |
+| 11   | 注册微软账户            | 账户管理         |
+
+---
+
+**让 Minecraft 玩家告别复杂配置，专注创造乐趣！** 🚀
