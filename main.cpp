@@ -235,7 +235,7 @@ int main(){
                             "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj767a0b1bfc0b94b599e72605aca47297f?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1M-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
                             "C:\\Minecraft-ToosDownloads\\JDK-17.exe"
                          );
-                        if(success) {
+                         if(success) {
                             std::wcout << L"下载成功" << std::endl;
                         } else {
                             std::wcout << L"下载失败，请检查网络或考虑使用科学上网(VPN)或者加速器加速GitHub，错误码：" << GetLastError() << std::endl;
