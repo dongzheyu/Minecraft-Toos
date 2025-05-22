@@ -6,11 +6,49 @@
 //
 #include <bits/stdc++.h>
 #include <windows.h>
-#include <limits> 
+#include <wininet.h>
+#include <fstream>
+#pragma comment(lib, "wininet.lib")
 using namespace std;
 const string CURRENT_VERSION = "6.4.2"; // 当前版本号
 stack<int>num;
 stack<char>op;
+bool downloadFile(const std::string& url, const std::string& filename) {
+    HINTERNET hInternet = InternetOpen("MyApp/1.0", INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, 0);
+    if (!hInternet) {
+        std::cerr << "InternetOpen failed: " << GetLastError() << std::endl;
+        return false;
+    }
+
+    HINTERNET hConnect = InternetOpenUrl(hInternet, url.c_str(), NULL, 0, INTERNET_FLAG_RELOAD, 0);
+    if (!hConnect) {
+        std::cerr << "InternetOpenUrl failed: " << GetLastError() << std::endl;
+        InternetCloseHandle(hInternet);
+        return false;
+    }
+
+    std::ofstream file(filename, std::ios::binary);
+    if (!file) {
+        std::cerr << "Failed to open file: " << filename << std::endl;
+        InternetCloseHandle(hConnect);
+        InternetCloseHandle(hInternet);
+        return false;
+    }
+
+    const int bufferSize = 4096;
+    char buffer[bufferSize];
+    DWORD bytesRead;
+
+    while (InternetReadFile(hConnect, buffer, bufferSize, &bytesRead) && bytesRead > 0) {
+        file.write(buffer, bytesRead);
+    }
+
+    file.close();
+    InternetCloseHandle(hConnect);
+    InternetCloseHandle(hInternet);
+
+    return true;
+}
 void convertGameTime(int ticks) {
     int seconds = ticks / 20;
     int minutes = seconds / 60;
@@ -149,36 +187,86 @@ int main(){
                     switch(m){
                     case 1:
                         system("cls");
-                        system("start JDK-8.exe");
-                        cout<<"请等待安装程序完成...";
+                        bool success = downloadFile(
+                            "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj7b623810ea1a443acb9743e43da6c42f4?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1L-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                            "C:\\Minecraft-ToosDownloads\\JDK-8.exe"
+                        );
+                        if(success) {
+                            std::wcout << L"下载成功" << std::endl;
+                        } else {
+                            std::wcout << L"下载失败，请检查网络或考虑使用科学上网(VPN)或者加速器加速GitHub，错误码：" << GetLastError() << std::endl;
+                        }
+                        system("start C:\\Minecraft-ToosDownloads\\JDK-8.exe");
                         system("pause");
                         system("cls");
                         break;
                     case 2:
                         system("cls");
-                        system("start JDK-17.exe");
-                        cout<<"请等待安装程序完成...";
+                        bool success = downloadFile(
+                            "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj767a0b1bfc0b94b599e72605aca47297f?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1M-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                            "C:\\Minecraft-ToosDownloads\\JDK-17.exe"
+                        );
+                        if(success) {
+                            std::wcout << L"下载成功" << std::endl;
+                        } else {
+                            std::wcout << L"下载失败，请检查网络或考虑使用科学上网(VPN)或者加速器加速GitHub，错误码：" << GetLastError() << std::endl;
+                        }
+                        system("start C:\\Minecraft-ToosDownloads\\JDK-17.exe");;
                         system("pause");
                         system("cls");
                         break;
-                    case 3:
+                    case 3:{
                         system("cls");
-                        system("start JDK-21.exe");
-                        cout<<"请等待安装程序完成...";
-                        system("pause");
-                        system("cls");
+                    bool success = downloadFile(
+                        "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj75f38463174fb43ee9eac2fb7537e87b6?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1K-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                        "C:\\Minecraft-ToosDownloads\\JDK-21.exe"
+                    );
+                    if(success) {
+                        std::wcout << L"下载成功" << std::endl;
+                    } else {
+                        std::wcout << L"下载失败，错误码：" << GetLastError() << std::endl;
+                    }
+                        system("start C:\\Minecraft-ToosDownloads\\JDK-21.exe");
                         break;
+                    }
                     case 4:
                         system("cls");
-                        system("start JDK-8.exe");
+                        bool success = downloadFile(
+                            "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj767a0b1bfc0b94b599e72605aca47297f?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1M-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                            "C:\\Minecraft-ToosDownloads\\JDK-17.exe"
+                        );
+                        if(success) {
+                            std::wcout << L"下载成功" << std::endl;
+                        } else {
+                            std::wcout << L"下载失败，请检查网络或考虑使用科学上网(VPN)或者加速器加速GitHub，错误码：" << GetLastError() << std::endl;
+                        }
+                        system("start C:\\Minecraft-ToosDownloads\\JDK-17.exe");;
                         cout<<"请等待安装程序完成再按任意键！！！";
                         system("pause");
                         system("cls");
-                        system("start JDK-17.exe");
+                        bool success = downloadFile(
+                            "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj767a0b1bfc0b94b599e72605aca47297f?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1M-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                            "C:\\Minecraft-ToosDownloads\\JDK-17.exe"
+                        );
+                        if(success) {
+                            std::wcout << L"下载成功" << std::endl;
+                        } else {
+                            std::wcout << L"下载失败，请检查网络或考虑使用科学上网(VPN)或者加速器加速GitHub，错误码：" << GetLastError() << std::endl;
+                        }
+                        system("start C:\\Minecraft-ToosDownloads\\JDK-17.exe");;
                         cout<<"请等待安装程序完成再按任意键！！！";
                         system("pause");
                         system("cls");
-                        system("start JDK-21.exe");
+                        bool success = downloadFile(
+                            "https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj75f38463174fb43ee9eac2fb7537e87b6?x-cli-msg=%7B%22linkId%22%3A%221GumWstoo1K-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%7D",
+                            "C:\\Minecraft-ToosDownloads\\JDK-21.exe"
+                        );
+                        if(success) {
+                            std::wcout << L"下载成功" << std::endl;
+                        } else {
+                            std::wcout << L"下载失败，错误码：" << GetLastError() << std::endl;
+                        }
+                            system("start C:\\Minecraft-ToosDownloads\\JDK-21.exe");
                         cout<<"请等待安装程序完成再按任意键！！！";
                         system("pause");
                         system("cls");
