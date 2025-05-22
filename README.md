@@ -9,7 +9,7 @@
 
 ### 🔧 核心工具
 1. **启动 PCL2CE**  
-   快速启动 [PCL2CE](https://github.com/PCL-Community/PCL2-CE)（PrismLauncher 社区版增强）。
+   快速启动 [PCL2CE](https://github.com/PCL-Community/PCL2-CE)（PCL2 社区版增强）。
 2. **启动 Hello Minecraft! Launcher**  
    启动经典国产 Minecraft 启动器（需提前安装 Java 环境）。
 3. **配置 Java 环境**  
