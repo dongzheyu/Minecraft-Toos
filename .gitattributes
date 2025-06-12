@@ -1,0 +1,4 @@
+cmake-build-debug/*.exe filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*exe filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*。exe filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*.exe filter=lfs diff=lfs merge=lfs -text
