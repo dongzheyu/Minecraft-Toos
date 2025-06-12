@@ -1,1 +1,4 @@
 cmake-build-debug/*.exe filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*.dll filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*.so filter=lfs diff=lfs merge=lfs -text
+cmake-build-debug/*.pdb filter=lfs diff=lfs merge=lfs -text
