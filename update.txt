@@ -1,8 +1,2 @@
-[Update1]
-Name=Minecraft-Toos
-Version=6.5.2
-URL=https://files.zohopublic.com.cn/public/workdrive-public/download/9kwj7cc540a12607d445ea08ed3e34f81c7d1?x-cli-msg=%7B%22linkId%22%3A%221GumWstougF-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%2C%22isWDSupport%22%3Afalse%7D
-Size=396000000
-MD5=c940c11c0a648c5c6ed3d558871328d9
-Description=更新内容：🔧修复已知BUG：修复部分组件在启动后会多留一个pause问题。📝新增日志功能：新增中文日志支持。包括记录用户信息、用户操作行为以及错误信息。📦组件更新：将部分组件更新为最新版本，以提升性能和兼容性。📄新增协议入口：在主页添加「查看最终用户许可协议」按钮（EULA）。点击可直接跳转至协议详情页面。
-Mandatory=1
+6.6.0
+https://files.zohopublic.com.cn/public/workdrive-public/download/q4a33c3752e26933a4623a4d6f207a16c3e9a?x-cli-msg=%7B%22linkId%22%3A%221GumWstoxUt-35NGn%22%2C%22isFileOwner%22%3Afalse%2C%22version%22%3A%221.0%22%2C%22isWDSupport%22%3Afalse%7D
